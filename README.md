@@ -19,3 +19,11 @@ I Worked on the mnemonic validation part of the project.Added checks for valid a
 vaishnavi - 25111013
 
 I worked on the register validation part. The isRegister() function checks whether a given register is one of the supported IA-32 registers such as EAX, EBX, ECX, EDX, ESI, EDI, ESP, and EBP. The checkTwoRegisters() function validates two register operands, while checkOneRegister() validates a single register operand. If an invalid register is provided, an error message is displayed and the validation returns false.
+
+
+Krishna - 25111003
+
+Worked on valid and invalid instruction validation.
+Checked whether the mnemonic/instruction is valid using isValidMnemonic().
+Handled instructions like INC, DEC, MUL, and DIV, which require one register.
+Handled other instructions that require two registers.
