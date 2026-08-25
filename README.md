@@ -14,3 +14,8 @@ I worked on the preprocessing part. The preprocess() function takes one assembly
 Payal - 25111044
 
 I Worked on the mnemonic validation part of the project.Added checks for valid and invalid assembly instructions.Included instructions like MOV, ADD, INC, DEC, MUL, and DIV. Tested the validator with different inputs.Integrated it with the main program for smooth validation.
+
+
+vaishnavi - 25111013
+
+I worked on the register validation part. The isRegister() function checks whether a given register is one of the supported IA-32 registers such as EAX, EBX, ECX, EDX, ESI, EDI, ESP, and EBP. The checkTwoRegisters() function validates two register operands, while checkOneRegister() validates a single register operand. If an invalid register is provided, an error message is displayed and the validation returns false.
