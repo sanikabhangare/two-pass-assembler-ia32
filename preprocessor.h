@@ -1,3 +1,6 @@
+#ifndef PREPROCESSOR_H
+#define PREPROCESSOR_H
+
 #include <string>
 #include <vector>
 #include <sstream>
@@ -17,7 +20,8 @@ ParsedLine preprocess(string line)
     if (pos != string::npos)
         line = line.substr(0, pos);
 
-    for (char &c : line) {
+    for (char &c : line)
+    {
         if (c == ',')
             c = ' ';
     }
@@ -31,12 +35,15 @@ ParsedLine preprocess(string line)
         result.operands.push_back(word);
 
     for (char &c : result.mnemonic)
-        c = toupper(c);
+        c = toupper((unsigned char)c);
 
-    for (string &operand : result.operands) {
+    for (string &operand : result.operands)
+    {
         for (char &c : operand)
-            c = toupper(c);
+            c = toupper((unsigned char)c);
     }
 
     return result;
 }
+
+#endif
