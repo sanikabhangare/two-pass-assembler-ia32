@@ -8,7 +8,7 @@ Roles-
 
 Sanika - 25111008
 
-I worked on the preprocessing part. The preprocess() function takes one assembly line and first removes the comment from it. Then I replace commas with spaces so that it becomes easy to separate the words using stringstream. The first word is taken as the mnemonic and the remaining words are stored in the operands vector. I created the ParsedLine structure to keep the mnemonic and operands together. Finally, I convert both mnemonic and operands to uppercase so that the assembler can accept both capital and small letters. After this, the parsed data is passed to the validators.
+I worked on the preprocessor part of the assembler. I handled the parsing of assembly instructions by separating the mnemonic and operands, removing comments and handling commas. I also added uppercase conversion so that instructions and registers can be processed consistently.
 
 
 Payal - 25111044
