@@ -3,25 +3,37 @@
 
 #include <string>
 #include <vector>
+#include <fstream>
 using namespace std;
 
-bool isValidMnemonic(string mnemonic)
+bool isValidMnemonic(string mnemonic, string opcodeFile)
 {
-    string instructions[] = {
-        "MOV", "ADD", "SUB", "CMP",
-        "XOR", "OR", "AND", "INC", "DEC", "MUL", "DIV"
-    };
+    ifstream file("opcode.txt");
 
-    for (string instruction : instructions) {
-        if (mnemonic == instruction)
+    if (!file)
+        return false;
+
+    string instruction;
+
+    while (file >> instruction)
+    {
+        if (instruction == mnemonic)
             return true;
     }
 
     return false;
 }
 
-bool checkOperandCount(vector<string> operands)
+bool checkOperandCount(string mnemonic, vector<string> operands)
 {
+    if (mnemonic == "INC" ||
+        mnemonic == "DEC" ||
+        mnemonic == "MUL" ||
+        mnemonic == "DIV")
+    {
+        return operands.size() == 1;
+    }
+
     return operands.size() == 2;
 }
 
