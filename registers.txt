@@ -1,0 +1,8 @@
+EAX
+EBX
+ECX
+EDX
+ESI
+EDI
+ESP
+EBP
