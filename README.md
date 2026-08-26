@@ -23,7 +23,7 @@ I worked on the register validation part. The isRegister() function checks wheth
 
 Krishna - 25111003
 
-Worked on valid and invalid instruction validation.
-Checked whether the mnemonic/instruction is valid using isValidMnemonic().
-Handled instructions like INC, DEC, MUL, and DIV, which require one register.
-Handled other instructions that require two registers.
+
+Developed the main.cpp to read and  process the assembly code from text.asm .
+Integrated mnemonics and register validation modules.
+Handles invalid mnemonics and operand with appropriate error message.
