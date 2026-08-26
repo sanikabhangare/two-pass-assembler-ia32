@@ -26,4 +26,4 @@ Krishna - 25111003
 
 Developed the main.cpp to read and  process the assembly code from text.asm .
 Integrated mnemonics and register validation modules.
-Handles invalid mnemonics and operand with appropriate error message.
+Handled invalid mnemonics and operand with appropriate error message.
