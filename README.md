@@ -13,7 +13,7 @@ I worked on the preprocessor part of the assembler. I handled the parsing of ass
 
 Payal - 25111044
 
-I Worked on the mnemonic validation part of the project.Added checks for valid and invalid assembly instructions.Included instructions like MOV, ADD, INC, DEC, MUL, and DIV. Tested the validator with different inputs.Integrated it with the main program for smooth validation.
+I worked on adding and validating assembly instruction mnemonics and their corresponding opcodes.I added instruction details such as MOV, ADD, SUB, CMP, XOR, OR, and AND.I also implemented operand count validation for different instructions.I connected the mnemonic validation with the opcode.txt file.I helped ensure that valid instructions and operands are correctly identified.
 
 
 vaishnavi - 25111013
