@@ -1,6 +1,8 @@
 #include <iostream>
 #include <fstream>
+#include <string>
 #include <cctype>
+
 #include "preprocessor.h"
 #include "mnemonics_validator.h"
 #include "register_validator.h"
@@ -11,7 +13,8 @@ int main()
 {
     ifstream file("text.asm");
 
-    if (!file) {
+    if (!file)
+    {
         cout << "Error: Cannot open text.asm\n";
         return 1;
     }
@@ -25,65 +28,42 @@ int main()
         if (parsed.mnemonic.empty())
             continue;
 
-        for (char &c : parsed.mnemonic)
-            c = toupper(c);
-
-
-        for (string &op : parsed.operands)
+        if (!isValidMnemonic(parsed.mnemonic, "opcode.txt"))
         {
-            for (char &c : op)
-                c = toupper(c);
-        }
-
-        if (!isValidMnemonic(parsed.mnemonic))
-        {
-            cout << "Error: Invalid instruction '"
-                 << parsed.mnemonic << "'\n";
+            cout << "Mnemonic: " << parsed.mnemonic << "\n";
+            cout << "Status: Not Found\n";
+            cout << "\n";
             continue;
         }
 
-        if (parsed.mnemonic == "INC" ||
-            parsed.mnemonic == "DEC" ||
-            parsed.mnemonic == "MUL" ||
-            parsed.mnemonic == "DIV")
-        {
-          
-            if (parsed.operands.size() != 1)
-            {
-                cout << "Error: " << parsed.mnemonic
-                     << " requires one register\n";
-                continue;
-            }
+        cout << "Mnemonic: " << parsed.mnemonic << "\n";
+        cout << "Status: Found\n";
 
-           
-            if (checkOneRegister(parsed.operands[0]))
-            {
-                cout << "Valid: "
-                     << parsed.mnemonic << " "
-                     << parsed.operands[0] << "\n";
-            }
+        if (!checkOperandCount(parsed.mnemonic, parsed.operands))
+        {
+            cout << "Error: Invalid number of operands\n";
+            cout << "\n";
+            continue;
         }
-        else
+
+        for (string operand : parsed.operands)
         {
-           
-            if (parsed.operands.size() != 2)
+            cout << "Operand: " << operand << "\n";
+
+            if (isRegister(operand, "registers.txt"))
             {
-                cout << "Error: " << parsed.mnemonic
-                     << " requires two registers\n";
-                continue;
+                cout << "Type: Register\n";
+            }
+            else
+            {
+                cout << "Type: Unknown\n";
             }
 
-            if (checkTwoRegisters(parsed.operands[0],
-                                  parsed.operands[1]))
-            {
-                cout << "Valid: "
-                     << parsed.mnemonic << " "
-                     << parsed.operands[0] << ", "
-                     << parsed.operands[1] << "\n";
-            }
+            cout << "\n";
         }
     }
 
     file.close();
+
     return 0;
 }
