@@ -27,3 +27,14 @@ Krishna - 25111003
 Developed the main.cpp to read and  process the assembly code from text.asm .
 Integrated mnemonics and register validation modules.
 Handled invalid mnemonics and operand with appropriate error message.
+
+
+Task 3 (Decimal to Hex conversion, Memory Tracking)
+
+Roles-
+
+Sanika - 25111008
+
+
+I worked on the data directive part of the assembler. I created data_directive.h to handle DB, DW and DD and return their sizes — 1, 2 and 4 bytes respectively.
+These sizes are used to calculate the address of the next variable and update the location counter.
