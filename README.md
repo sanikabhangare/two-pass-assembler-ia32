@@ -48,3 +48,8 @@ I worked on the data conversion part. I developed the function to convert decima
 Vaishnavi - 25111013
 
 I worked on the location counter part of the assembler. I created `location_counter.h` to keep track of the current memory address. It starts from address 0 and updates the address based on the size of the data or instruction. The `getAddress()` function gives the current address, and the `update()` function increases the address by the given size.
+
+
+
+Krishna - 25111003
+Worked on the main C++ program ,Implemented reading and processing of the text.asm input file. Used the data size, hexadecimal conversion, and location counter modules to calculate the required information.
