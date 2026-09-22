@@ -2,6 +2,7 @@ Task 1 (pdf)
 two-pass-assembler-ia32
 A two-pass assembler for the 32-bit x86 (IA-32) architecture that translates supported assembly instructions into Little-Endian machine code using opcode, ModR/M, SIB, displacement, and immediate encoding.
 
+
 Task 2 (valid and invalid instruction)
 
 Roles-
@@ -38,3 +39,9 @@ Sanika - 25111008
 
 I worked on the data directive part of the assembler. I created data_directive.h to handle DB, DW and DD and return their sizes — 1, 2 and 4 bytes respectively.
 These sizes are used to calculate the address of the next variable and update the location counter.
+
+Payal - 25111044
+
+
+I worked on the data conversion part. I developed the function to convert decimal values into hexadecimal format. I tested it with different decimal values and checked whether the hexadecimal output was correct.
+
