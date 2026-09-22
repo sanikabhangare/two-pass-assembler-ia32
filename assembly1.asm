@@ -1,0 +1,17 @@
+SECTION .data
+
+num1 DB 25
+num2 DW 1000
+num3 DD 50000
+num4 DB 10
+num5 DW 2500
+num6 DD 100000
+count DB 50
+value DW 500
+total DD 75000
+
+SECTION .text
+
+MOV EAX, EBX
+ADD EAX, ECX
+SUB EDX, EAX
