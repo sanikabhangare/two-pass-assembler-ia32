@@ -79,6 +79,15 @@ I also added a "reset()" function to set all flags to 0 and a "display()" functi
 
 
 
+Krishna - 25111003
+  My Contribution
+- Developed the C++ program for IA-32 flag register simulation.
+- Implemented MOV, ADD, SUB, and CMP instructions.
+- Managed register values and processor flag updates.
+- Implemented conditional jumps using the Zero Flag (ZF).
+- Added assembly file handling and basic error checking.
+
+
 
 
 
