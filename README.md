@@ -61,6 +61,12 @@ Vaishnavi - 25111013
 
 I worked on the symbol table generation part of the assembler. I created `symbol.cpp` to store variable names, directives, values, sizes, and memory addresses. The program supports DB, DW, and DD directives. It also updates the location counter based on the size of each variable and displays the final memory address.
 
+Payal - 25111044
+
+I worked on to created the assembly input file (text.asm) using DB, DW, and DD directives. Tested different variables and values to verify their sizes and memory addresses in the symbol table.
+
+
+
 
 
 
