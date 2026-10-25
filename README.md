@@ -77,11 +77,9 @@ I worked on the flag register part of the assembler. I created the "flags.h" fil
 
 I also added a "reset()" function to set all flags to 0 and a "display()" function to show their current values. These flags are used by the other files to store and display the status after arithmetic operations.
 
+Payal - 25111044
 
-
-
-
-
+I worked on developed the ADD flags module in C++ to update the Zero Flag (ZF), Sign Flag (SF), Carry Flag (CF), and Overflow Flag (OF). Tested the calculations with different input values to verify the flag results.
 
 
 Vaishnavi - 25111013
