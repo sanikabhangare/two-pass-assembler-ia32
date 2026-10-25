@@ -53,3 +53,13 @@ I worked on the location counter part of the assembler. I created `location_coun
 
 Krishna - 25111003
 Worked on the main C++ program ,Implemented reading and processing of the text.asm input file. Used the data size, hexadecimal conversion, and location counter modules to calculate the required information.
+
+
+Task 4 (Implement symbol table generation from assembly file)
+
+Vaishnavi - 25111013
+I worked on the symbol table generation part of the assembler. I created `symbol.cpp` to store variable names, directives, values, sizes, and memory addresses. The program supports DB, DW, and DD directives. It also updates the location counter based on the size of each variable and displays the final memory address.
+
+
+
+
