@@ -82,3 +82,9 @@ I also added a "reset()" function to set all flags to 0 and a "display()" functi
 
 
 
+
+
+
+Vaishnavi  - 25111013
+ I worked on the subtraction flags part of the assembler. I created the "sub_flags.h" file to implement the logic for subtraction operations.
+I also added the logic to update four flags: ZF, SF, CF, and OF. These flags check whether the result is zero, negative, causes a borrow, or produces an overflow. They help the assembler identify the status of the result after a subtraction operation.
