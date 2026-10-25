@@ -89,6 +89,17 @@ I worked on the subtraction flags part of the assembler. I created the "sub_flag
 I also added the logic to update four flags: ZF, SF, CF, and OF. These flags check whether the result is zero, negative, causes a borrow, or produces an overflow. They help the assembler identify the status of the result after a subtraction operation.
 
 
+Krishna - 25111003
+
+  My Contribution
+- Developed the C++ program for IA-32 flag register simulation.
+- Implemented MOV, ADD, SUB, and CMP instructions.
+- Managed register values and processor flag updates.
+- Implemented conditional jumps using the Zero Flag (ZF).
+- Added assembly file handling and basic error checking.
+
+
+
 
 
 
