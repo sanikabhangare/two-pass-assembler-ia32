@@ -94,14 +94,6 @@ I also added the logic to update four flags: ZF, SF, CF, and OF. These flags che
 
 
 
-Krishna - 25111003
-  My Contribution
-- Developed the C++ program for IA-32 flag register simulation.
-- Implemented MOV, ADD, SUB, and CMP instructions.
-- Managed register values and processor flag updates.
-- Implemented conditional jumps using the Zero Flag (ZF).
-- Added assembly file handling and basic error checking.
-
 
 
 
