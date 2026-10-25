@@ -57,6 +57,8 @@ Worked on the main C++ program ,Implemented reading and processing of the text.a
 
 Task 4 (Implement symbol table generation from assembly file)
 
+Roles-
+
 Vaishnavi - 25111013
 
 I worked on the symbol table generation part of the assembler. I created `symbol.cpp` to store variable names, directives, values, sizes, and memory addresses. The program supports DB, DW, and DD directives. It also updates the location counter based on the size of each variable and displays the final memory address.
@@ -64,6 +66,16 @@ I worked on the symbol table generation part of the assembler. I created `symbol
 Payal - 25111044
 
 I worked on to created the assembly input file (text.asm) using DB, DW, and DD directives. Tested different variables and values to verify their sizes and memory addresses in the symbol table.
+
+Task 5 (Implement flags)
+
+Roles-
+
+Sanika - 25111008
+
+I worked on the flag register part of the assembler. I created the "flags.h" file to define the four flags: ZF, SF, CF and OF.
+
+I also added a "reset()" function to set all flags to 0 and a "display()" function to show their current values. These flags are used by the other files to store and display the status after arithmetic operations.
 
 
 
