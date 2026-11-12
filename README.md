@@ -1,9 +1,9 @@
-Task 1 (pdf)
+TASK 1 (pdf)
 two-pass-assembler-ia32
 A two-pass assembler for the 32-bit x86 (IA-32) architecture that translates supported assembly instructions into Little-Endian machine code using opcode, ModR/M, SIB, displacement, and immediate encoding.
 
 
-Task 2 (valid and invalid instruction)
+TASK 2 (valid and invalid instruction)
 
 Roles-
 
@@ -30,7 +30,7 @@ Integrated mnemonics and register validation modules.
 Handled invalid mnemonics and operand with appropriate error message.
 
 
-Task 3 (Decimal to Hex conversion, Memory Tracking)
+TASK 3 (Decimal to Hex conversion, Memory Tracking)
 
 Roles-
 
@@ -55,7 +55,7 @@ Krishna - 25111003
 Worked on the main C++ program ,Implemented reading and processing of the text.asm input file. Used the data size, hexadecimal conversion, and location counter modules to calculate the required information.
 
 
-Task 4 (Implement symbol table generation from assembly file)
+TASK 4 (Implement symbol table generation from assembly file)
 
 Roles-
 
@@ -67,7 +67,7 @@ Payal - 25111044
 
 I worked on to created the assembly input file (text.asm) using DB, DW, and DD directives. Tested different variables and values to verify their sizes and memory addresses in the symbol table.
 
-Task 5 (Implement flags)
+TASK 5 (Implement flags)
 
 Roles-
 
@@ -97,6 +97,15 @@ Krishna - 25111003
 - Managed register values and processor flag updates.
 - Implemented conditional jumps using the Zero Flag (ZF).
 - Added assembly file handling and basic error checking.
+
+
+TASK 5 (Macros MNT MDT)
+
+Roles-
+
+Sanika - 25111008
+
+I worked on the macro tables part of the project. I created the MNT and MDT structures to store macro names, parameter counts and the instructions inside each macro. I also added the searchMNT() function to find a macro by its name and the displayTables() function to display both tables on the screen. My part mainly handles storing, searching and displaying macro information during Pass 0.
 
 
 
