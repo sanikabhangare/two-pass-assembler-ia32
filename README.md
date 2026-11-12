@@ -109,7 +109,7 @@ I worked on the macro tables part of the project. I created the MNT and MDT stru
 
 Payal - 25111044
 
-I worked on the Macro Definition part of the project.I developed the defineMacro()`function to identify macro definitions, extract macro names and parameters,and store macro information in the MNT and MDT tables.I also implemented parameter parsing using `parseArgs()`and replaced formal parameters with positional notations like #1, #2, etc.My part mainly handles processing macro definitions and storing their body instructions during Pass 0.
+I worked on the Macro Definition part of the project.I developed the defineMacro()` function to identify macro definitions, extract macro names and parameters,and store macro information in the MNT and MDT tables.I also implemented parameter parsing using `parseArgs()`and replaced formal parameters with positional notations like #1, #2, etc.My part mainly handles processing macro definitions and storing their body instructions during Pass 0.
 
 
 
