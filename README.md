@@ -117,6 +117,15 @@ Vaishnavi - 25111013
 I worked on the Macro Expansion part of the project. I implemented the `searchMNT()` function to search for a macro by its name in the Macro Name Table (MNT). I also developed the `expandMacro()` function to expand macro calls by retrieving instructions from the Macro Definition Table (MDT) and replacing positional parameters such as `#1`, `#2`, etc., with their corresponding actual arguments. The expanded instructions are stored in the `expandedCode` vector. My part mainly handles searching macros and generating expanded code during the macro expansion process.
 
 
+Krishna - 25111003
+
+My contribution
+- Developed the main driver program to read and process assembly input files.
+- Integrated macro definition, macro table searching, and macro expansion modules.
+- Handled input preprocessing by removing extra whitespace.
+- Generated the expanded assembly code and saved it into output.asm.
+- Displayed the Macro Name Table (MNT) and Macro Definition Table (MDT).
+
 
 
 
